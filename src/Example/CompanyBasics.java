@@ -1,10 +1,24 @@
 package Example;
 
 public class CompanyBasics {
+	
 	private String name;
 	private String part; // 이름, 부서
     private String addr; // 주소
     private String birthday; // 생일
+    
+    public CompanyBasics() {
+		// TODO Auto-generated constructor stub
+	}
+    
+    public CompanyBasics(String name, String part, String addr, String birthday) {
+		super();
+		this.name = name;
+		this.part = part;
+		this.addr = addr;
+		this.birthday = birthday;
+	}
+    
 	public String getName() {
 		return name;
 	}
@@ -29,6 +43,7 @@ public class CompanyBasics {
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
+	
 	@Override
     public String toString() 
     {

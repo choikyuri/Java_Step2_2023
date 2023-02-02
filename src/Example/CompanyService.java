@@ -61,7 +61,7 @@ public class CompanyService {
  
             try
             {
-                System.out.println("찾으려는 직원의 이름을 입력하세요 : ");
+                System.out.print("찾으려는 직원의 이름을 입력하세요 : ");
                 // 찾으려는 직원의 이름을 입력받고 name2에 저장
                 String name2 = sc.next();
  
@@ -78,8 +78,11 @@ public class CompanyService {
                         //outputTitle();
                         //System.out.println(cb);
                         System.out.println(csarr.get(i));
+                    }else {
+                    	 System.out.println("찾으려는 직원의 이름을 없습니다 ");
                     }
                 }
+               
             } 
             catch (InputMismatchException e) 
             {
@@ -91,7 +94,7 @@ public class CompanyService {
         {
             System.out.println(e.getMessage());
         }
- 
+       
     } 
     
 	/*

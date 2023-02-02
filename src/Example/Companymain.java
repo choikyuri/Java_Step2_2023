@@ -6,7 +6,7 @@ public class Companymain {
 
 	public static void main(String[] args)
     {
-        // Scanner기능을 사용하기 위해 객체 생성
+		// Scanner기능을 사용하기 위해 객체 생성
         Scanner sc = new Scanner(System.in);
         
         // CompanyService 클래스를 사용하기 위해 객체 생성
@@ -18,9 +18,9 @@ public class Companymain {
         // 직원관리 프로그램을 종료전까지 반복 동작 시키기 위해 while문 사용
         while(bo)
         {
-            System.out.println("1. 등록");
-            System.out.println("2. 검색");
-            System.out.println("3. 종료");
+            System.out.println("1. 등록"); //saveWorker()
+            System.out.println("2. 검색"); //search()
+            System.out.println("3. 종료"); 
             System.out.print(">>> ");
             
             // switch-case문을 사용하기 위해 key값 입력받기
@@ -41,7 +41,8 @@ public class Companymain {
                 System.out.println("프로그램 종료");
                 bo = false;
                 break;
-            }
-        }
-    }
-}
+			 }//switch
+         }//while
+    }//main
+}//class
+
